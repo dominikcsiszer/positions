@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csiszér Alex Dominik</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <ul class="nav-menu">
+            <li class="nav-link"><a href="#" class="nav-item">Menu1</a></li>
+            <div class="lenyilo">
+                <li class="nav-link"><a href="#" class="nav-item">Menu2</a></li>
+                <div class="lenyilo-elem">
+                    <a href="#">menu</a>
+                    <a href="#">menu</a>
+                </div>
+            </div>
+            <li class="nav-link"><a href="#" class="nav-item">Menu3</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Position</h1>
+
+        <div class="kepek">
+            <img class="kep1" src="img/kep1.jpg" alt="">
+            <img class="kep2" src="img/kep2.jpg" alt="">
+            <img class="kep3" src="img/kep3.jpg" alt="">
+        </div>
+
+        <div class="kep">
+            <img class="foKep1 foKep" src="img/kep1.jpg" alt="">
+            <img class="foKep2 foKep" src="img/kep2.jpg" alt="">
+            <img class="foKep3 foKep" src="img/kep3.jpg" alt="">
+            <form action="" class="kep-form" id="form">
+                <span id="gomb">X</span>
+                <fieldset>
+                    <legend>Tetszik ez a Position dolog?</legend>
+
+                    <input type="radio" name="igen" id="igen">
+                    <label for="igen">Igen</label> <br>
+                    <input type="radio" name="igen" id="nem">
+                    <label for="nem">Nem</label> <br>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const gomb = document.querySelector("#gomb"),
+              form = document.querySelector("#form")
+
+        gomb.addEventListener("click", function() {
+            form.classList.add("close")
+        })
+    </script>
+</body>
+</html>
